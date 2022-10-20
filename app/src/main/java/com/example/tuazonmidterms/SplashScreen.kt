@@ -18,7 +18,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        val sharedPreferences = getSharedPreferences("MY_PREFERENCES", Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("MY_PREFERENCES", Context.MODE_PRIVATE)
 
         val username = sharedPreferences.getString(USERNAME,"").toString()
 
